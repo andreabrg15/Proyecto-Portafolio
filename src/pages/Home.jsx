@@ -1,23 +1,40 @@
+import { IoLogoReact } from "react-icons/io5";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiDotnet } from "react-icons/si";
+import { FaAngular } from "react-icons/fa";
 
 function Home() {
     return (
-        <div className="grid grid-cols-6 h-dvh p-5">
-            <div className="col-span-2 pt-16 pl-24 nunito-sans">
-                <img src="/20260617.jpg" className="justify-self-center size-48 rounded-full" alt="Foto"/>
-                <h1 className="text-5xl changa-one-regular pt-4">Andrea Reyna</h1>
-                <h3 className="text-2xl pt-2">Desarrolladora Web Jr</h3>
+        <>
+            <div className="grid grid-cols-6 p-5">
+                <div className="col-span-2 pt-6 pl-24 nunito-sans">
+                    <img src="/20260617.jpg" className="justify-self-center size-48 rounded-full" alt="Foto"/>
+                    <h1 className="text-5xl text-white changa-one-regular pt-4">Andrea Reyna</h1>
+                    <h3 className="text-2xl text-white pt-2">Desarrolladora Web Jr</h3>
+                </div>
+                <div className="col-span-4 pt-22">
+                    <p className="text-justify nunito-sans font-bold text-white text-lg/8 pl-20 pr-30">
+                        Soy una desarrolladora web jr, con conocimientos en React, Node.js y .NET, egresada de la Facultad
+                        de Ciencias Físico Matemáticas. Me interesa crear soluciones funcionales que brinden una buena
+                        experiencia de usuario y me gusta aprender cosas nuevas. He trabajado con operaciones CRUD,
+                        consumo y desarrollo de APIs, así como con bases de datos SQL a través de proyectos personales
+                        y académicos. Actualmente, busco una oportunidad para construir mayor experiencia en la industria
+                        del desarrollo de manera profesional.
+                    </p>
+                </div>
             </div>
-            <div className="col-span-4 pt-32">
-                <p className="text-justify pl-20 pr-30 nunito-sans font-bold text-white">
-                    Soy una desarrolladora web jr, con conocimientos en React, Node.js y .NET, egresada de la Facultad
-                    de Ciencias Físico Matemáticas. Me interesa crear soluciones funcionales que brinden una buena
-                    experiencia de usuario y me gusta aprender cosas nuevas. He trabajado con operaciones CRUD,
-                    consumo y desarrollo de APIs, así como con bases de datos SQL a través de proyectos personales
-                    y académicos. Actualmente, busco una oportunidad para construir mayor experiencia en la industria
-                    del desarrollo de manera profesional.
-                </p>
+            <div className="grid grid-cols-6 p-5 pt-5 pb-8">
+                <IoLogoReact size={100} color="#00d3f3" className="animate-spin col-start-2 justify-self-center"/>
+                <FaAngular size={100} color="#fb2c36" className="justify-self-center"/>
+                <IoLogoJavascript size={100} color="#ffff00" className="bg-black rounded-lg justify-self-center"/>
+                <SiDotnet size={100} color="#fff" className="bg-violet-600 rounded-lg justify-self-center"/>
             </div>
-        </div>
+            <div className="grid grid-cols-6 p-5 py-5">
+                <button className="bg-white rounded-3xl nunito-sans font-bold px-10 py-3 col-start-3 col-span-2 justify-self-center hover:bg-fuchsia-500 hover:cursor-pointer">
+                    Ver Proyectos Destacados
+                </button>
+            </div>
+        </>
     )
 }
 
