@@ -16,6 +16,7 @@ function Contact() {
         }).then(
             () => {
                 alert("Se envio su correo con exito");
+                e.target.reset();
             },
             (error) => {
                 console.log("Error", error.text);
@@ -36,9 +37,6 @@ function Contact() {
                         <label className="flex justify-start text-white">Ingrese su correo:</label>
                         <input className="bg-white/80 rounded-2xl w-120 px-7 py-2" placeholder="Correo" type="email" id="email" 
                         name="from_email" required/>
-                        <label className="flex justify-start text-white">Ingrese el asunto:</label>
-                        <input className="bg-white/80 rounded-2xl w-120 px-7 py-2" placeholder="Asunto" type="text" id="title" 
-                        name="title" required/>
                         <label className="flex justify-start text-white">Ingrese el mensaje que desea enviar:</label>
                         <textarea className="bg-white/80 rounded-2xl w-120 px-7 py-2 mb-5" placeholder="Mensaje" rows="4" id="message" 
                         name="message" required/>

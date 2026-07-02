@@ -30,12 +30,24 @@ function Home() {
                 <IoLogoJavascript size={100} color="#ffff00" className="bg-black rounded-lg justify-self-center"/>
                 <SiDotnet size={100} color="#fff" className="bg-violet-600 rounded-lg justify-self-center"/>
             </div>
-            <div className="grid grid-cols-6 p-5 py-5">
+            <div className="grid grid-cols-6 p-5">
                 <Link className="bg-mauve-900 text-white rounded-3xl nunito-sans font-bold px-10 py-3 col-start-3 
                 col-span-2 justify-self-center hover:bg-mauve-900/70 hover:cursor-pointer"
                 to="/proyectos">
                     Ver Proyectos Destacados
                 </Link>
+            </div>
+            <div className="grid grid-cols-6 p-5 pt-0 pb-12 text-start pl-20">
+                <h3 className="text-4xl text-white changa-one-regular mb-4">Habilidades</h3>
+                <div className="nunito-sans font-bold text-white text-lg/8 row-start-2 col-span-3">
+                    <ul>
+                        <li><span className="bg-mauve-950">Frontend:</span> React, Angular, HTML, CSS, Tailwind</li>
+                        <li><span className="bg-mauve-950">Backend:</span> Node.js, Express, .NET</li>
+                        <li><span className="bg-mauve-950">Lenguajes:</span> JavaScript, C#, PHP</li>
+                        <li><span className="bg-mauve-950">Bases de datos:</span> SQL Server, MySQL</li>
+                        <li><span className="bg-mauve-950">Herramientas:</span> Github, Figma</li>
+                    </ul>
+                </div>
             </div>
         </>
     )

@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Este Portafolio",
+        "date": "Junio 2026",
+        "img": "/portafolio-web.png",
+        "summary": "Portafolio web desarrollado en React con JavaScript, utilizando Tailwind CSS para el diseño. Dividido en sección de Inicio, Proyectos y Contacto.",
+        "repo": "https://github.com/andreabrg15/Proyecto-Portafolio",
+        "techItems": ["HTML", "Tailwind", "JavaScript", "React"]
+    },
+    {
+        "id": 2,
+        "name": "Movies API",
+        "date": "Mayo 2026",
+        "img": "/movies-api.png",
+        "summary": "REST API desarrollada a través de ASP.NET (C#) con endpoints para películas y géneros. Utilizando Entity Framework como ORM.",
+        "repo": "https://github.com/andreabrg15/MoviesApi",
+        "techItems": ["ASP.NET", "C#", "Entity Framework Core"]
+    },
+    {
+        "id": 3,
+        "name": "Top Filter",
+        "date": "Enero - Junio 2025",
+        "img": "/top-filter.png",
+        "summary": "Aplicación de escritorio para aplicar filtros a imágenes y vídeo. Con funciones de carga y descarga de archivos.",
+        "repo": "https://github.com/andreabrg15/Proyecto_TopFilter",
+        "techItems": [".NET Framework", "C#", "Windows Forms"]
+    }
+]
