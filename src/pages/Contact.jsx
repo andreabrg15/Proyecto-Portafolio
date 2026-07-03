@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Contact() {
 

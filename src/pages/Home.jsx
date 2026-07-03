@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { IoLogoReact } from "react-icons/io5";
-import { IoLogoJavascript } from "react-icons/io5";
+import { IoLogoReact, IoLogoJavascript } from "react-icons/io5";
 import { SiDotnet } from "react-icons/si";
 import { FaAngular } from "react-icons/fa";
 
