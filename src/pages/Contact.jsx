@@ -26,7 +26,7 @@ function Contact() {
     return (
         <div className="grid nunito-sans font-bold text-lg p-3">
             <h1 className="text-5xl changa-one-regular text-white">Contacto</h1>
-            <div className="grid grid-cols-8">
+            <div className="grid grid-cols-8 animate-appear">
                 {/*Formulario de contacto*/}
                 <div className="col-start-3 col-span-3 py-3">
                     <form ref={form} className="grid justify-center py-3 gap-2" onSubmit={sendEmail}>

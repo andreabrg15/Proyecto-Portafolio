@@ -8,7 +8,7 @@ function Projects() {
     return (
         <div className="grid nunito-sans font-bold text-white text-lg p-3">
             <h1 className="text-5xl changa-one-regular">Mis proyectos</h1>
-            <div className="grid grid-cols-8 mb-6">
+            <div className="grid grid-cols-8 mb-6 animate-appear">
                 {
                     projects.map((project) =>
                         (

@@ -41,7 +41,7 @@ function ProjectDetails() {
     return (
         <div className="grid nunito-sans font-bold text-white text-lg p-3">
             <h1 className="text-5xl changa-one-regular">{project.name}</h1>
-            <div className="grid grid-cols-8 mb-6">
+            <div className="grid grid-cols-8 mb-6 animate-appear">
                 {/*Imagenes y descripcion a detalle*/}
                 <div className="col-start-2 col-span-6 py-5">
                     <div className="flex justify-center items-center gap-5">

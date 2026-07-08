@@ -6,7 +6,7 @@ import { FaAngular } from "react-icons/fa";
 function Home() {
     return (
         <>
-            <div className="grid grid-cols-6 p-5">
+            <div className="grid grid-cols-6 p-5 animate-appear">
                 <div className="col-span-2 pt-6 pl-24 nunito-sans">
                     <img src="/20260617.jpg" className="justify-self-center size-48 rounded-full" alt="Foto"/>
                     <h1 className="text-5xl text-white changa-one-regular pt-4">Andrea Reyna</h1>
@@ -23,13 +23,13 @@ function Home() {
                     </p>
                 </div>
             </div>
-            <div className="grid grid-cols-6 p-5 pt-5 pb-8">
+            <div className="grid grid-cols-6 p-5 pt-5 pb-8 animate-appear">
                 <IoLogoReact size={100} color="#00d3f3" className="animate-spin col-start-2 justify-self-center"/>
                 <FaAngular size={100} color="#fb2c36" className="justify-self-center"/>
                 <IoLogoJavascript size={100} color="#ffff00" className="bg-black rounded-lg justify-self-center"/>
                 <SiDotnet size={100} color="#fff" className="bg-violet-600 rounded-lg justify-self-center"/>
             </div>
-            <div className="grid grid-cols-6 p-5">
+            <div className="grid grid-cols-6 p-5 animate-appear">
                 <Link className="bg-mauve-900 text-white rounded-3xl nunito-sans font-bold px-10 py-3 col-start-3 
                 col-span-2 justify-self-center hover:bg-mauve-900/70 hover:cursor-pointer"
                 to="/proyectos">
