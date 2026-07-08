@@ -1,8 +1,19 @@
+import { createElement } from "react";
 import { Link, useLocation } from "react-router-dom"
 
 function Header() {
 
     const location = useLocation();
+
+    const downloadCV = () => {
+        const pdfURL = "CV-Andrea-Reyna-Gtz.pdf";
+        const link = document.createElement("a");
+        link.href = pdfURL;
+        link.download = "CV-Andrea-Reyna.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 
     return (
         <>
@@ -17,6 +28,11 @@ function Header() {
                     {
                     (location.pathname != '/contacto') && <Link className="px-5 hover:text-fuchsia-500" to="/contacto">Contacto</Link>
                     }
+                    <button onClick={downloadCV} 
+                    className="bg-mauve-900 text-white rounded-3xl nunito-sans font-bold px-4 py-1 
+                    hover:bg-mauve-900/70 hover:cursor-pointer hover:text-fuchsia-500">
+                        Descargar CV
+                    </button>
                 </div>
             </section>
         </>

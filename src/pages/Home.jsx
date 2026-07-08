@@ -36,18 +36,6 @@ function Home() {
                     Ver Proyectos Destacados
                 </Link>
             </div>
-            <div className="grid grid-cols-6 p-5 pt-0 pb-12 text-start pl-20">
-                <h3 className="text-4xl text-white changa-one-regular mb-4">Habilidades</h3>
-                <div className="nunito-sans font-bold text-white text-lg/8 row-start-2 col-span-3">
-                    <ul>
-                        <li><span className="bg-mauve-950">Frontend:</span> React, Angular, HTML, CSS, Tailwind</li>
-                        <li><span className="bg-mauve-950">Backend:</span> Node.js, Express, .NET</li>
-                        <li><span className="bg-mauve-950">Lenguajes:</span> JavaScript, C#, PHP</li>
-                        <li><span className="bg-mauve-950">Bases de datos:</span> SQL Server, MySQL</li>
-                        <li><span className="bg-mauve-950">Herramientas:</span> Github, Figma</li>
-                    </ul>
-                </div>
-            </div>
         </>
     )
 }

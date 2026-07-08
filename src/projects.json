@@ -3,30 +3,46 @@
         "id": 1,
         "name": "Este Portafolio",
         "date": "Junio 2026",
-        "cover": "/portafolio-web.png",
+        "cover": "/portafolio-web/1.png",
         "summary": "Portafolio web desarrollado en React con JavaScript, utilizando Tailwind CSS para el diseño. Dividido en sección de Inicio, Proyectos y Contacto.",
+        "obj":  "Facilitarles la visualización de mi trabajo a otras personas y mejorar la presentación de mis proyectos.",
         "repo": "https://github.com/andreabrg15/Proyecto-Portafolio",
         "techItems": [ "HTML", "Tailwind", "JavaScript", "React"],
-        "imgs": [ "/portafolio-web.png" ]
-    },
+        "imgs": [ "/portafolio-web/1.png" ],
+        "achieve": [ "Creé una interfaz basada en componentes con un diseño hecho en Tailwind CSS.",
+                     "Implementé la actualización de información a través del manejo de estado en React.",
+                     "Construí el menú de navegación con ayuda de las librerías y hooks de React.",
+                     "Agregué la funcionalidad de envio de correos de contacto con ayuda del consumo de una API externa." ]
+    }, 
     {
         "id": 2,
         "name": "Movies API",
         "date": "Mayo 2026",
-        "cover": "/movies-api.png",
+        "cover": "/movies-api/1.png",
         "summary": "REST API desarrollada a través de ASP.NET (C#) con endpoints para películas y géneros. Utilizando Entity Framework como ORM.",
+        "obj":  "Crear una herramienta que puede servir como el backend de un sitio con datos de películas.",
         "repo": "https://github.com/andreabrg15/MoviesApi",
         "techItems": [ "ASP.NET", "C#", "Entity Framework Core" ],
-        "imgs": [ "/movies-api.png" ]
+        "imgs": [ "/movies-api/1.png", "/movies-api/2.png", "/movies-api/3.png" ],
+        "achieve": [ "Aprendí a desarrollar una REST API en ASP.NET con C#.",
+                     "Logré que la API interactuara con una base de datos SQL a través de Entity Framework.",
+                     "Creé endpoints de consulta utilizando Entity Framework en combinación con expresiones LINQ.",
+                     "Agregué validaciones para controlar el intercambio de datos en los endpoints."]
     },
     {
         "id": 3,
         "name": "Top Filter",
         "date": "Enero - Junio 2025",
-        "cover": "/top-filter.png",
+        "cover": "/top-filter/1.png",
         "summary": "Aplicación de escritorio para aplicar filtros a imágenes y vídeo. Con funciones de carga y descarga de archivos.",
+        "obj":  "Brindar una forma fácil y libre para agregar filtros a tus fotos y vídeos.",
         "repo": "https://github.com/andreabrg15/Proyecto_TopFilter",
         "techItems": [ ".NET Framework", "C#", "Windows Forms" ],
-        "imgs": [ "/top-filter.png", "/top-filter-2.png", "/top-filter-3.png" ]
+        "imgs": [ "/top-filter/1.png", "/top-filter/2.png", "/top-filter/3.png", 
+        "/top-filter/4.png", "/top-filter/5.png", "/top-filter/6.png", "/top-filter/7.png" ],
+        "achieve": [ "Diseñé e implementé una interfaz de usuario intuitiva en Windows Forms (.NET Framework).",
+                     "Implementé funciones de carga y descarga de archivos con C#.",
+                     "Programé un histograma que muestra los niveles de color RGB en la imagen.",
+                     "Logré desarrollar filtros como el gaussiano y relieve a través de operaciones con matrices." ]
     }
 ]
