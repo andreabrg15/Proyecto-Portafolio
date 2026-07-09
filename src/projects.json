@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Este Portafolio",
-        "date": "Junio 2026",
+        "date": "Junio - Julio 2026",
         "cover": "/portafolio-web/1.png",
         "summary": "Portafolio web desarrollado en React con JavaScript, utilizando Tailwind CSS para el diseño. Dividido en sección de Inicio, Proyectos y Contacto.",
         "obj":  "Facilitarles la visualización de mi trabajo a otras personas y mejorar la presentación de mis proyectos.",
