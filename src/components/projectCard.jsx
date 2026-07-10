@@ -13,13 +13,14 @@ function ProjectCard({project}) {
     }
 
     return (
-        <div className="col-start-2 col-span-6 p-3 my-3 hover:bg-mauve-900/50 hover:rounded-2xl hover:cursor-pointer" onClick={seeDetails} data-project-id={project.id}>
-            <h2 className="flex justify-start pb-7">{project.date} - {project.name}</h2>
-            <div className="flex justify-start">
-                <img src={project.cover} alt="imagen proyecto" className="w-70 border-3 rounded-lg border-white"/>
-                <div className="grid gap-3 pl-7">
+        <div className="md:col-start-2 md:col-span-6 p-3 my-3 bg-mauve-900/50 rounded-xl lg:bg-inherit lg:hover:bg-mauve-900/50 hover:rounded-2xl hover:cursor-pointer" onClick={seeDetails} data-project-id={project.id}>
+            <h2 className="md:flex md:justify-start pb-7">{project.date} - {project.name}</h2>
+            <div className="grid gap-y-5 md:flex md:justify-start">
+                <img src={project.cover} alt="imagen proyecto" className="justify-self-center md:justify-self-start w-70 border-3 rounded-lg border-white"/>
+                <div className="grid gap-3 md:pl-7 max-w-dvw">
                     <p className="text-justify"> {project.summary} </p>
-                    <div className="flex justify-start gap-3 items-center h-fit">
+                    <FaExternalLinkAlt color="#fff" className="flex justify-self-end lg:hidden"/>
+                    <div className="lg:text-xs xl:text-lg lg:flex justify-start gap-3 items-center h-fit hidden">
                         {
                             project.techItems.map((item, index) => (
                                 <TechItem name={item} key={index}></TechItem>

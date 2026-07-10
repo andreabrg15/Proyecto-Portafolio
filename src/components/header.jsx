@@ -18,7 +18,7 @@ function Header() {
     return (
         <>
             <section className="lg:h-24 grid lg:grid-cols-6 items-center nunito-sans font-bold text-lg text-white">
-                <div className="grid py-5 gap-3 lg:py-0 lg:col-start-5 lg:col-span-2 lg:flex lg:gap-8">
+                <div className="grid py-5 gap-3 lg:py-0 lg:col-start-4 lg:col-span-3 xl:col-start-5 xl:col-span-2 lg:flex lg:gap-8">
                     {
                     (location.pathname != '/') && <div className="underline underline-offset-4"><Link className="hover:text-fuchsia-500" to="/">Inicio</Link></div>
                     }

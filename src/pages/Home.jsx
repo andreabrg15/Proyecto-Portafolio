@@ -8,12 +8,12 @@ function Home() {
         <>
             <div className="grid px-5 py-2 lg:p-5 animate-appear">
                 <div className="grid justify-items-center lg:flex lg:pl-25 lg:pr-10">
-                    <div className="grid nunito-sans lg:w-1/4 lg:pt-7">
-                        <img src="/20260617.jpg" className="justify-self-center size-48 rounded-full" alt="Foto"/>
-                        <h1 className="text-5xl text-white changa-one-regular pt-4">Andrea Reyna</h1>
+                    <div className="grid nunito-sans lg:w-1/4 xl:pt-7">
+                        <img src="/20260617.jpg" className="justify-self-center size-40 xl:size-48 rounded-full" alt="Foto"/>
+                        <h1 className="text-4xl xl:text-5xl text-white changa-one-regular pt-4">Andrea Reyna</h1>
                         <h3 className="text-2xl text-white pt-2">Desarrolladora Jr</h3>
                     </div>
-                    <div className="pt-7 lg:pt-17 lg:w-3/4">
+                    <div className="pt-7 lg:pt-3 xl:pt-17 lg:w-3/4">
                         <p className="text-justify nunito-sans font-bold text-white text-lg/8 px-5 lg:px-20">
                             Soy una desarrolladora jr, con conocimientos en React, Node.js y .NET, egresada de la Facultad
                             de Ciencias Físico Matemáticas. Me interesa crear soluciones funcionales que brinden una buena
@@ -35,10 +35,9 @@ function Home() {
                     <SiDotnet size={"8em"} color="#fff" className="bg-violet-600 rounded-lg"/>
                 </div>
             </div>
-            <div className="grid grid-cols-6 p-5 animate-appear">
-                <Link className="bg-mauve-900 text-white rounded-3xl nunito-sans font-bold px-10 py-3 col-start-3 
-                col-span-2 justify-self-center hover:bg-mauve-900/70 hover:cursor-pointer"
-                to="/proyectos">
+            <div className="grid p-5 justify-items-center animate-appear">
+                <Link className="bg-mauve-900 text-white rounded-3xl nunito-sans font-bold 
+                px-10 py-3 hover:bg-mauve-900/70 hover:cursor-pointer" to="/proyectos">
                     Ver Proyectos Destacados
                 </Link>
             </div>
