@@ -13,7 +13,7 @@ function ProjectCard({project}) {
     }
 
     return (
-        <div className="md:col-start-2 md:col-span-6 p-3 my-3 bg-mauve-900/50 rounded-xl lg:bg-inherit lg:hover:bg-mauve-900/50 hover:rounded-2xl hover:cursor-pointer" onClick={seeDetails} data-project-id={project.id}>
+        <div className="md:col-start-2 md:col-span-6 p-3 my-3 xl:my-1 bg-mauve-900/50 rounded-xl lg:bg-inherit lg:hover:bg-mauve-900/50 hover:rounded-2xl hover:cursor-pointer" onClick={seeDetails} data-project-id={project.id}>
             <h2 className="md:flex md:justify-start pb-7">{project.date} - {project.name}</h2>
             <div className="grid gap-y-5 md:flex md:justify-start">
                 <img src={project.cover} alt="imagen proyecto" className="justify-self-center md:justify-self-start w-70 border-3 rounded-lg border-white"/>
@@ -26,7 +26,7 @@ function ProjectCard({project}) {
                                 <TechItem name={item} key={index}></TechItem>
                             ))
                         }
-                        <FaExternalLinkAlt color="#fff"/>
+                        <FaExternalLinkAlt color="#fff" className="lg:flex-none"/>
                     </div>
                 </div>
             </div>

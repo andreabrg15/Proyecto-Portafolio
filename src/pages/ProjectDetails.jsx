@@ -81,7 +81,7 @@ function ProjectDetails() {
                         {
                             project.achieve && project.achieve.map((item, index) => (
                                 <div key={index} className="flex gap-2 mb-1 py-1">
-                                    <IoMdCheckmarkCircleOutline size={"1.5em"}/>
+                                    <IoMdCheckmarkCircleOutline size={"1.5em"} className="flex-none"/>
                                     <p className="text-justify">{item}</p>
                                 </div>
                             ))

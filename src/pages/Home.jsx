@@ -16,7 +16,7 @@ function Home() {
                     <div className="pt-7 lg:pt-3 xl:pt-17 lg:w-3/4">
                         <p className="text-justify nunito-sans font-bold text-white text-lg/8 px-5 lg:px-20">
                             Soy una desarrolladora jr, con conocimientos en React, Node.js y .NET, egresada de la Facultad
-                            de Ciencias Físico Matemáticas. Me interesa crear soluciones funcionales que brinden una buena
+                            de Ciencias Físico Matemáticas. Me interesa crear aplicaciones funcionales que brinden una buena
                             experiencia de usuario y me gusta aprender cosas nuevas. He trabajado con operaciones CRUD,
                             consumo y desarrollo de APIs, así como con bases de datos SQL a través de proyectos personales
                             y académicos. Actualmente, busco una oportunidad para construir mayor experiencia en la industria
