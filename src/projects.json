@@ -45,5 +45,21 @@
                      "Implementé funciones de carga y descarga de archivos con C#.",
                      "Programé un histograma que muestra los niveles de color RGB en la imagen.",
                      "Logré desarrollar filtros como el gaussiano y relieve a través de operaciones con matrices." ]
+    },
+    {
+        "id": 4,
+        "name": "Habimate",
+        "date": "Agosto - Diciembre 2024",
+        "cover": "/habimate/1.png",
+        "summary": "Proyecto colaborativo para crear una plataforma educativa de cursos. Desarrollado en PHP con estilos de Bootstrap y CSS.",
+        "obj":  "Crear un espacio dinámico y fácil de usar donde se pueda aprender una habilidad nueva en línea.",
+        "repo": "https://github.com/WikkArt/PIA_BDM",
+        "techItems": [ "HTML", "CSS", "PHP", "MySQL" ],
+        "imgs": [ "/habimate/1.png", "/habimate/2.png", "/habimate/3.png", 
+        "/habimate/4.png", "/habimate/5.png", "/habimate/6.png" ],
+        "achieve": [ "Contribuí en un equipo de 4 personas mediante Github. Además aprendí a trabajar en un modelo MVC.",
+                     "Diseñé la base de datos relacional en MySQL para la gestión eficiente de la información.",
+                     "Integré la funcionalidad de inscripción a cursos y la visualización del kardex, construyendo las vistas y procedures necesarios para luego desarrollar el código PHP.",
+                     "Logré implementar la visualización de reportes de ventas trabajando desde la base de datos con funciones y vistas hasta el código en PHP." ]
     }
 ]

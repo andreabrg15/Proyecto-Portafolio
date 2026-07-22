@@ -14,7 +14,7 @@ function ProjectCard({project}) {
 
     return (
         <div className="md:col-start-2 md:col-span-6 p-3 my-3 xl:my-1 bg-mauve-900/50 rounded-xl lg:bg-inherit lg:hover:bg-mauve-900/50 hover:rounded-2xl hover:cursor-pointer" onClick={seeDetails} data-project-id={project.id}>
-            <h2 className="md:flex md:justify-start pb-7">{project.date} - {project.name}</h2>
+            <h2 className="md:flex md:justify-start pb-7">{project.name} : &nbsp;{project.date}</h2>
             <div className="grid gap-y-5 md:flex md:justify-start">
                 <img src={project.cover} alt="imagen proyecto" className="justify-self-center md:justify-self-start w-70 border-3 rounded-lg border-white"/>
                 <div className="grid gap-3 md:pl-7 max-w-dvw">

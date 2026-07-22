@@ -6,7 +6,7 @@ function Header() {
     const location = useLocation();
 
     const downloadCV = () => {
-        const pdfURL = "CV-Andrea-Reyna-Gtz.pdf";
+        const pdfURL = "CV-Andrea-Reyna.pdf";
         const link = document.createElement("a");
         link.href = pdfURL;
         link.download = "CV-Andrea-Reyna.pdf";
