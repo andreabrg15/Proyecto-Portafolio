@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { IoLogoReact, IoLogoJavascript } from "react-icons/io5";
 import { SiDotnet } from "react-icons/si";
-import { FaAngular } from "react-icons/fa";
+import { PiFileSqlFill } from "react-icons/pi";
 
 function Home() {
     return (
@@ -28,11 +28,11 @@ function Home() {
             <div className="grid justify-items-center gap-y-5 md:grid-cols-6 p-5 pt-5 pb-8 animate-appear text-xs xl:text-sm">
                 <div className="flex gap-10 md:gap-x-7 lg:gap-x-17 xl:gap-x-25 2xl:gap-x-35 md:col-start-2 md:col-span-2">
                     <IoLogoReact size={"8em"} color="#00d3f3" className="animate-spin"/>
-                    <FaAngular size={"8em"} color="#fb2c36"/>
+                    <IoLogoJavascript size={"8em"} color="#ffff00" className="bg-black rounded-lg"/>
                 </div>
                 <div className="flex gap-10 md:gap-x-7 lg:gap-x-17 xl:gap-x-25 2xl:gap-x-35 md:col-span-2">
-                    <IoLogoJavascript size={"8em"} color="#ffff00" className="bg-black rounded-lg"/>
                     <SiDotnet size={"8em"} color="#fff" className="bg-violet-600 rounded-lg"/>
+                    <PiFileSqlFill size={"8em"} color="#fff"/>
                 </div>
             </div>
             <div className="grid p-5 justify-items-center animate-appear">

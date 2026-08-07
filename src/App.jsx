@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Footer from './components/footer'
@@ -9,10 +10,14 @@ import ProjectDetails from './pages/ProjectDetails'
 
 function App() {
 
+  const [ shouldtranslate, setShouldTranslate ] = useState(false);
+
   return (
     <>
       <div className='min-h-dvh'>
-        <Header></Header>
+        <Header shouldTranslate={shouldtranslate} 
+        onChange={() => shouldtranslate ? setShouldTranslate(false) : setShouldTranslate(true)}>
+        </Header>
         <main>
           <Routes>
             <Route path="/" element={<Home/>}></Route>

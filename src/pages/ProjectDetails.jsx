@@ -57,8 +57,15 @@ function ProjectDetails() {
                         <IoIosArrowDroprightCircle size={"2em"} color="#fff" className="hover:cursor-pointer hover:scale-125"
                         onClick={nextSlide}/>
                     </div>
-                    <div className="md:text-start h-fit mb-5">
-                        Repositorio: <a href={project.repo} className="text-cyan-300 hover:underline" target="_blank"> {project.repo}</a>
+                    <div className="md:text-start h-fit mb-5 xl:flex">
+                        Repositorio(s): &nbsp;
+                        {
+                            project.repo && project.repo.map((item, index) => (
+                                <div className="wrap-anywhere" key={index}>
+                                    <a href={item} className="text-cyan-300 hover:underline" target="_blank"> {item}</a>&nbsp;,&nbsp;
+                                </div>
+                            ))
+                        }
                     </div>
                     <div className="md:flex md:justify-start md:gap-3 items-center h-fit mb-6">
                         {
