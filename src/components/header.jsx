@@ -7,10 +7,19 @@ function Header({shouldTranslate, onChange}) {
     const location = useLocation();
 
     const downloadCV = () => {
-        const pdfURL = "CV-Andrea-Reyna.pdf";
+        var pdfUrl;
+        if (shouldTranslate) {
+            pdfUrl = "CV-Andrea-Reyna-(EN).pdf";
+        } else {
+            pdfUrl = "CV-Andrea-Reyna.pdf"
+        }
         const link = document.createElement("a");
-        link.href = pdfURL;
-        link.download = "CV-Andrea-Reyna.pdf";
+        link.href = pdfUrl;
+        if (shouldTranslate) {
+            link.download = "CV-Andrea-Reyna-(EN).pdf";
+        } else {
+            link.download = "CV-Andrea-Reyna.pdf";
+        }
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 
-function Contact() {
+function Contact({shouldTranslate}) {
 
     const form = useRef();
 
@@ -27,23 +27,32 @@ function Contact() {
     return (
         <div className="grid nunito-sans font-bold text-lg p-3">
             <Toaster position="top-center" toastOptions={{style: {background: "#bfffa0"}}}/>
-            <h1 className="text-4xl xl:text-5xl changa-one-regular text-white">Contacto</h1>
+            <h1 className="text-4xl xl:text-5xl changa-one-regular text-white">{(shouldTranslate) ? "Contact" : "Contacto"}</h1>
             <div className="grid lg:grid-cols-8 animate-appear p-5 lg:p-0">
                 {/*Formulario de contacto*/}
                 <div className="lg:col-start-3 lg:col-span-3 py-3">
                     <form ref={form} className="grid justify-center py-3 gap-2" onSubmit={sendEmail}>
-                        <label htmlFor="name" className="flex justify-start text-white">Ingrese su nombre:</label>
-                        <input className="bg-white/80 rounded-2xl md:w-120 lg:w-full px-7 py-2" placeholder="Nombre" type="text" id="name" 
+                        <label htmlFor="name" className="flex justify-start text-white">
+                            {(shouldTranslate) ? "Enter your name:" : "Ingrese su nombre:"}
+                        </label>
+                        <input className="bg-white/80 rounded-2xl md:w-120 lg:w-full px-7 py-2" 
+                        placeholder={(shouldTranslate) ? "Name" : "Nombre"} type="text" id="name" 
                         name="name" required/>
-                        <label htmlFor="email" className="flex justify-start text-white">Ingrese su correo:</label>
-                        <input className="bg-white/80 rounded-2xl md:w-120 lg:w-full px-7 py-2" placeholder="Correo" type="email" id="email" 
+                        <label htmlFor="email" className="flex justify-start text-white">
+                            {(shouldTranslate) ? "Enter your email:" : "Ingrese su correo:"}
+                        </label>
+                        <input className="bg-white/80 rounded-2xl md:w-120 lg:w-full px-7 py-2" 
+                        placeholder={(shouldTranslate) ? "Email" : "Correo"} type="email" id="email" 
                         name="from_email" required/>
-                        <label htmlFor="message" className="flex justify-start text-white">Ingrese el mensaje que desea enviar:</label>
-                        <textarea className="bg-white/80 rounded-2xl md:w-120 lg:w-full px-7 py-2 mb-5" placeholder="Mensaje" rows="4" id="message" 
+                        <label htmlFor="message" className="flex justify-start text-white">
+                            {(shouldTranslate) ? "Enter the message you'd like to send:" : "Ingrese el mensaje que desea enviar:"}
+                        </label>
+                        <textarea className="bg-white/80 rounded-2xl md:w-120 lg:w-full px-7 py-2 mb-5" 
+                        placeholder={(shouldTranslate) ? "Message" : "Mensaje"} rows="4" id="message" 
                         name="message" required/>
                         <button className="bg-mauve-900 text-white rounded-3xl nunito-sans font-bold px-10 
                         py-3 hover:bg-mauve-900/70 hover:cursor-pointer" type="submit">
-                            Enviar
+                            {(shouldTranslate) ? "Submit" : "Enviar"}
                         </button>
                     </form>
                 </div>
@@ -57,7 +66,7 @@ function Contact() {
                         </a>
                     </div>
                     <span className="grid text-justify text-white pt-5">
-                        Los mensajes de este formulario se envían a: 
+                        {(shouldTranslate) ? "Messages from this form are send to:" : "Los mensajes de este formulario se envían a:"} 
                         <a className="text-cyan-300 hover:underline hover:cursor-pointer" href="mailto:andreareyna34@gmail.com">
                             andreareyna34@gmail.com
                         </a>

@@ -20,14 +20,14 @@ function App() {
         </Header>
         <main>
           <Routes>
-            <Route path="/" element={<Home/>}></Route>
-            <Route path="/proyectos" element={<Projects/>}></Route>
-            <Route path="/contacto" element={<Contact/>}></Route>
-            <Route path="/proyectos/:id" element={<ProjectDetails></ProjectDetails>}></Route>
+            <Route path="/" element={<Home shouldTranslate={shouldtranslate}/>}></Route>
+            <Route path="/proyectos" element={<Projects shouldTranslate={shouldtranslate}/>}></Route>
+            <Route path="/contacto" element={<Contact shouldTranslate={shouldtranslate}/>}></Route>
+            <Route path="/proyectos/:id" element={<ProjectDetails shouldTranslate={shouldtranslate}></ProjectDetails>}></Route>
           </Routes>
         </main>
       </div>
-      <Footer></Footer>
+      <Footer shouldTranslate={shouldtranslate}></Footer>
     </>
   )
 }
