@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { IoLogoReact, IoLogoJavascript } from "react-icons/io5";
+import { IoLogoReact } from "react-icons/io5";
+import { FaJava } from "react-icons/fa";
 import { SiDotnet } from "react-icons/si";
 import { PiFileSqlFill } from "react-icons/pi";
 import { useState, useEffect } from "react";
@@ -7,12 +8,11 @@ import translate from "translate";
 
 function Home({shouldTranslate}) {
 
-    const originalSumm = `Soy una desarrolladora jr, con conocimientos en React, Node.js y .NET, 
-    egresada de la Facultad de Ciencias Físico Matemáticas. Me interesa crear aplicaciones funcionales 
-    que brinden una buena experiencia de usuario y me gusta aprender cosas nuevas. He trabajado con 
-    operaciones CRUD, consumo y desarrollo de APIs, así como con bases de datos SQL a través de 
-    proyectos personales y académicos. Actualmente, busco una oportunidad para construir mayor 
-    experiencia en la industria del desarrollo de manera profesional.`;
+    const originalSumm = `Desarrolladora de software egresada de la Facultad de Ciencias Físico Matemáticas. 
+    Cuento con experiencia práctica en desarrollo de aplicaciones web, consumo de APIs, así como manejo de 
+    bases de datos SQL. Me interesa crear aplicaciones funcionales que brinden una buena experiencia de usuario 
+    y me gusta aprender cosas nuevas. Actualmente, busco oportunidades para seguir fortaleciendo mis habilidades 
+    y contribuir al desarrollo de soluciones.`;
 
     const [summary, setSummary] = useState(originalSumm);
 
@@ -50,7 +50,7 @@ function Home({shouldTranslate}) {
             <div className="grid justify-items-center gap-y-5 md:grid-cols-6 p-5 pt-5 pb-8 animate-appear text-xs xl:text-sm">
                 <div className="flex gap-10 md:gap-x-7 lg:gap-x-17 xl:gap-x-25 2xl:gap-x-35 md:col-start-2 md:col-span-2">
                     <IoLogoReact size={"8em"} color="#00d3f3" className="animate-spin"/>
-                    <IoLogoJavascript size={"8em"} color="#ffff00" className="bg-black rounded-lg"/>
+                    <FaJava size={"8em"} color="#fff"/>
                 </div>
                 <div className="flex gap-10 md:gap-x-7 lg:gap-x-17 xl:gap-x-25 2xl:gap-x-35 md:col-span-2">
                     <SiDotnet size={"8em"} color="#fff" className="bg-violet-600 rounded-lg"/>
